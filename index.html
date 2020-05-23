@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 <body id="page-top">
@@ -57,8 +60,8 @@
                     <g class="social-group" fill="none" fill-rule="evenodd">
                       <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
                       <circle class="social-group__inner-circle social-group__inner-circle--dribbble" fill="#DA5988" cx="300" cy="300" r="252.5" />
-                      <path class="social-group__icon" d="M8.937,10.603c-0.383-0.284-0.741-0.706-0.754-0.837c0-0.223,0-0.326,0.526-0.758c0.684-0.56,1.062-1.297,1.062-2.076c0-0.672-0.188-1.273-0.512-1.71h0.286l1.58-1.196h-4.28c-1.717,0-3.222,1.348-3.222,2.885c0,1.587,1.162,2.794,2.726,2.858c-0.024,0.113-0.037,0.225-0.037,0.334c0,0.229,0.052,0.448,0.157,0.659c-1.938,0.013-3.569,1.309-3.569,2.84c0,1.375,1.571,2.373,3.735,2.373c2.338,0,3.599-1.463,3.599-2.84C10.233,11.99,9.882,11.303,8.937,10.603 M5.443,6.864C5.371,6.291,5.491,5.761,5.766,5.444c0.167-0.192,0.383-0.293,0.623-0.293l0,0h0.028c0.717,0.022,1.405,0.871,1.532,1.89c0.073,0.583-0.052,1.127-0.333,1.451c-0.167,0.192-0.378,0.293-0.64,0.292h0C6.273,8.765,5.571,7.883,5.443,6.864 M6.628,14.786c-1.066,0-1.902-0.687-1.902-1.562c0-0.803,0.978-1.508,2.093-1.508l0,0l0,0h0.029c0.241,0.003,0.474,0.04,0.695,0.109l0.221,0.158c0.567,0.405,0.866,0.634,0.956,1.003c0.022,0.097,0.033,0.194,0.033,0.291C8.752,14.278,8.038,14.786,6.628,14.786 M14.85,4.765h-1.493v2.242h-2.249v1.495h2.249v2.233h1.493V8.502h2.252V7.007H14.85V4.765z"
-                        fill="#000" fill-rule="nonzero" />
+                      <path class="social-group__icon" id="mail" d="M 150 150 L 450 150 L 450 400 L 150 400 L 150 150 L 450 150 L 450 150 L 300 250 Z"
+                        fill="#000" fill-rule="nonzero" stroke="#fff" stroke-width=5% />
                     </g>
                   </svg>
                         </a>
@@ -176,7 +179,53 @@
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
                 <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
+
+
+                <div class="subheading mb-3">Programming Languages</div>
+                <ul>
+
+                    <li> Python </li>
+                    <li> C/C++ </li>
+                    <li> Java </li>
+                    <li> Dart </li>
+                    <li> Clojure </li>
+                    <li> Javascript</li>
+                </ul>
+                <div class="subheading mb-3">Mobile Development</div>
+
+                <ul>
+                    <li> Android SDK </li>
+                    <li> Flutter</li>
+                    <li> Swift and Xcode (iOS) </li>
+                </ul>
+
+                <div class="subheading mb-3">Machine Learning</div>
+
+                <ul>
+                    <li> Sklearn </li>
+                    <li> Pytorch </li>
+                    <li> Keras </li>
+                </ul>
+
+                <div class="subheading mb-3"> Web Development </div>
+
+                <ul>
+                    <li> Node Js </li>
+                    <li> Vue JS </li>
+                    <li>d3</li>
+                    <li> HTML 5, CSS and Javascript </li>
+                    <li> Pug </li>
+                </ul>
+
+                <div class="subheading mb-3"> Databases</div>
+
+                <ul>
+                    <li> MongoDB </li>
+                    <li> SQLite </li>
+                    <li> MySQL </li>
+                    <li> PostgreSQL </li>
+                </ul>
+
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                     <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
@@ -197,35 +246,175 @@
 
                 </ul>
 
+
+
+
+
+
         </section>
         <hr class="m-0" />
         <!-- Interests-->
         <section class="resume-section" id="interests">
             <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development
-                    world.
-                </p>
+                <h2 class="mb-5">Projects</h2>
+
+
+                <div class="row" id="Projects_cards">
+                    <div class="col">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="fs-img" height=200rem src="assets/img/omniglot.png" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Few Shot Image Classification </h5>
+                                <p class="card-text"> Character Classification on the Omniglot dataset which consists of over 900 symbols from over 50 languages. Used Few Shot learning techniques to reach over 90% accuracy from only one/five training images. </p>
+                                <a href="https://github.com/Mushfequr-Rahman/Omniglot_baselines" target="_blank" class="btn btn-primary"> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="LoveL-img" height=200rem src="assets/img/LoveL.png" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> LoveL text Classification </h5>
+                                <p class="card-text"> A web application to classify your LoveL using an AI text classifier that was portotyped in python and runs on the browser with tensorflow js </p>
+                                <a href="https://github.com/Mushfequr-Rahman/LoveL_Classification_Website" target="_blank" class="btn btn-primary"> Code</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem; ">
+                            <img class="card-img-top " id="wha-img" height=200rem src="assets/img/wha.png " alt="Card image cap ">
+
+                            <div class="card-body ">
+                                <h5 class="card-title "> World Happiness Analysis </h5>
+                                <p class="card-text "> An indepth analysis into the 2015 happiness dataset. We analysed key attributes about the data set and created custom random forest models that predicted the happiness score for different countries and reached 94.2% testing
+                                    accuracy
+                                </p>
+                                <a href="https://github.com/Mushfequr-Rahman/World_happiness_Analysis " target="_blank " class="btn btn-primary "> Code</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 24rem; ">
+                            <img class="card-img-top" id="tfv-img" height=200rem src="assets/img/tfh.png " alt="Card image cap ">
+
+                            <div class="card-body ">
+                                <h5 class="card-title "> Toronto Fire Visualization </h5>
+                                <p class="card-text "> A web application built using d3 and javascript that visualizes all the fire incidents in Toronto from 2014-2017</p>
+                                <a href="https://github.com/Mushfequr-Rahman/TorontoFireIncident " target="_blank " class="btn btn-primary "> Code</a>
+                                <a href="https://master.d369dxxeryvnrt.amplifyapp.com/ " target="_blank " class="btn btn-primary "> Live Demo</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="chatsapp-img" height=200rem src="assets/img/chatsapp.png " alt="Card image cap ">
+                            <div class="card-body ">
+                                <h5 class="card-title "> Chats App </h5>
+                                <p class="card-text "> A custom chatting application inspired by whatapp built using Java. It has a custom backend server capable of handling multiple clients and a front end built using JavaFx and CSS. </p>
+                                <a href="https://github.com/Mushfequr-Rahman/ChatsApp " target="_blank " class="btn btn-primary "> Code</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="mot-img" height=200rem src="assets/img/mot.jpg " alt="Card image cap ">
+                            <div class="card-body ">
+                                <h5 class="card-title "> Towards Real Time MOT </h5>
+                                <p class="card-text "> An experiment in running the Towards Real Time MOT paper to train on our custom dataset and evaluate application of the network in real life scenarios. </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="row ">
+                    <div class="col">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="scanner-img" style="width: 100%; height: 20vw; object-fit: cover;" src="assets/img/scanner.jpg" alt="Card image cap ">
+                            <div class="card-body ">
+                                <h5 class="card-title "> News Detector </h5>
+                                <p class="card-text "> An android application that is capable of taking a picture and analyzing it to get the most relevant information and display related news articles and videos.</p>
+                                <a href="https://github.com/Mushfequr-Rahman/News_detector" target="_blank " class="btn btn-primary "> Code</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="notetakr-img" style="width: 100%; height: 20vw; object-fit: cover;" src="assets/img/notetakr.png " alt="Card image cap ">
+                            <div class="card-body ">
+                                <h5 class="card-title "> NoteTakR </h5>
+                                <p class="card-text "> NoteTakR is a crossplatform mobile application built using dart and flutter and has several unqiue features such as assignment tracking and custom voice to text recording.</p>
+                                <a href="https://github.com/Mushfequr-Rahman/NoteTakR" target="_blank " class="btn btn-primary "> Code</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col offset-md-3">
+                        <div class="card" style="width: 24rem;">
+                            <img class="card-img-top" id="fifa-img" style="width: 100%; height: 20vw; object-fit: cover;" src="assets/img/fifa.jpg " alt="Card image cap ">
+                            <div class="card-body ">
+                                <h5 class="card-title "> Fifa 2018 Schedule </h5>
+                                <p class="card-text "> Fifa 2018 Schedule is a mobile application built using Java and Android SDK. It features a unqiue UI and a user authntification system with facebook integration.</p>
+                                <a href="https://github.com/Mushfequr-Rahman/Fifa2018Schedule" target="_blank " class="btn btn-primary "> Code</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
             </div>
+
+
+
         </section>
-        <hr class="m-0" />
+        <hr class="m-0 " />
         <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Resume</h2>
-                <embed id="resume-pdf" src="assets/Mushfequr_Rahman_Resume_April_2(1).pdf" width="500px" height="800px">
+        <section class="resume-section " id="awards ">
+            <div class="resume-section-content ">
+                <h2 class="mb-5 ">Resume</h2>
+                <embed id="resume-pdf " src="assets/Mushfequr_Rahman_Resume_April_2(1).pdf " width="500px " height="800px ">
 
             </div>
         </section>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js "></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js "></script>
 </body>
 
 </html>

@@ -10329,6 +10329,15 @@ section.resume-section .resume-section-content {
     transition: all .45s;
 }
 
+.social-link .social-svg:hover #mail,
+.social-link .social-svg:active #mail,
+.social-link .social-svg:focus #mail {
+    fill: #FFFBFA;
+    transition: all .45s;
+    stroke: #000;
+    stroke-width: 2%;
+}
+
 .social-link .social-svg:hover .social-group__inner-circle,
 .social-link .social-svg:active .social-group__inner-circle,
 .social-link .social-svg:focus .social-group__inner-circle {
@@ -10352,4 +10361,20 @@ section.resume-section .resume-section-content {
 
 #resume-pdf {
     margin-left: 10%;
+}
+
+.card {
+    margin: 4rem;
+    border-radius: 2rem;
+}
+
+.card:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px #213c74;
+    -moz-box-shadow: -1px 9px 40px -12px #213c74;
+    box-shadow: -1px 9px 40px -12px #213c74;
+}
+
+.card-img-top {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
